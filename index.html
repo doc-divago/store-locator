@@ -37,9 +37,16 @@ gets 2/3 of the page. You can adjust this to your personal liking. */
       box-sizing: border-box;
     }
     </style>
-    <style media="screen">
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZG9jLWRpdmFnbyIsImEiOiJja2NnbXU0ancwdGx1MnhtMm1pdzV5cWd4In0.NXt0RiFp4HjZ_iy55WADkg';
 
-    </style>
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v10',
+      center: [-77.034084, 38.909671],
+      zoom: 14
+    });
+  </script>
   </head>
   <body>
     <div class='sidebar pad2'>Listing</div>
