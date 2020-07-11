@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <title>ES Locator - T146</title>
+    <title>ES Locator - T1461</title>
     <meta name='robots' content='noindex, nofollow'>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
@@ -191,7 +191,7 @@
         border-bottom-color: #91c949;
       }
 
-      .mapboxgl-popup-content div {
+      .mapboxgl-popup-content div.center {
         margin: auto;
         width: 50%;
         border: 2px solid #003399;
@@ -491,7 +491,7 @@
           .setLngLat(currentFeature.geometry.coordinates)
           .setHTML('<h3>Europa Square</h3>' +
             '<h4>' + currentFeature.properties.address + '</h4>' +
-            '<h4><a href="' + currentFeature.properties.squareUrl + '">Visit ' + currentFeature.properties.city + '</a></h4>')
+            '<div class="center"><a href="' + currentFeature.properties.squareUrl + '">Visit ' + currentFeature.properties.city + '</a></div>')
           .addTo(map);
       }
     </script>
