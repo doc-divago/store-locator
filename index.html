@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <title>Europa Square Locator - T134</title>
+    <title>Europa Square Locator - T14</title>
     <meta name='robots' content='noindex, nofollow'>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
@@ -228,7 +228,8 @@
               "country": "Italy",
               "crossStreet": "",
               "postalCode": "06034",
-              "state": "Umbria"
+              "state": "Umbria",
+              "squareUrl": "http://foligno.html"
             }
           },
           {
@@ -248,7 +249,8 @@
               "country": "Croatia",
               "crossStreet": "",
               "postalCode": "",
-              "state": ""
+              "state": "",
+              "squareUrl": "http://foligno.html"
             }
           },
           {
@@ -268,7 +270,8 @@
               "country": "Greece",
               "crossStreet": "",
               "postalCode": "",
-              "state": ""
+              "state": "",
+              "squareUrl": "http://foligno.html"
             }
           },
           {
@@ -288,7 +291,8 @@
               "country": "Latvia",
               "crossStreet": "",
               "postalCode": "",
-              "state": ""
+              "state": "",
+              "squareUrl": "http://foligno.html"
             }
           },
           {
@@ -308,7 +312,8 @@
               "country": "Belgium",
               "crossStreet": "",
               "postalCode": "",
-              "state": ""
+              "state": "",
+              "squareUrl": "http://foligno.html"
             }
           },
         ]
@@ -464,7 +469,8 @@
         var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
           .setHTML('<h3>Europa Square</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+            '<h4>' + currentFeature.properties.address + '</h4>' +
+            '<a href="' + currentFeature.properties.squareUrl + '">Visit</a>')
           .addTo(map);
       }
     </script>
